@@ -3,28 +3,26 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package data.karyawan;
+package prototype;
+
 /**
  *
  * @author ACER
  */
-public abstract class Jabatan {
-    public String Kepalakaryawan;
-    public String Karyawan;
+public class Jabatan implements Cloneable {
+    private String Kepalakaryawan;
+    private String Karyawan;
+    protected String Type;
     
-    public Jabatan(){
-    }
     
-    public Jabatan(Jabatan target){
-        if(target != null){
-            this.Karyawan = target.Karyawan;
-            this.Kepalakaryawan = target.Kepalakaryawan;
+    public Jabatan clone(){
+        Jabatan b = null;
+        try{
+            b = (Jabatan)super.clone();
+        } catch (Exception e){
         }
-    }
-    
-    @Override
-    public abstract Jabatan clone();
-    
+        return b;
+    }    
 
     public String getKepalakaryawan() {
         return Kepalakaryawan;
@@ -40,6 +38,14 @@ public abstract class Jabatan {
 
     public void setKaryawan(String Karyawan) {
         this.Karyawan = Karyawan;
+    }
+
+    public String getType() {
+        return Type;
+    }
+
+    public void setType(String Type) {
+        this.Type = Type;
     }
     
 }
