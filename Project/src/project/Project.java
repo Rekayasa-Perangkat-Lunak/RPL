@@ -5,8 +5,6 @@
  */
 package project;
 
-import Composite.KaryawanComposite;
-
 /**
  *
  * @author ACER
@@ -18,9 +16,10 @@ public class Project {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        //Prototype
         Karyawan Marketing = new Karyawan();
         KepKaryawan HeadMarketing = new KepKaryawan();
-        
+      
         System.out.println("Jabatan Kepala Karyawan dan Karyawan");
         System.out.println("Marketing :" +Marketing.getType());
         Jabatan TataUsaha = Marketing.clone();
@@ -29,8 +28,8 @@ public class Project {
         Jabatan KTU = HeadMarketing.clone();
         System.out.println("KTU :" +KTU.getType());
         
-        
-    KaryawanComposite Direktur_Utama = new KaryawanComposite("Irwan Rifani","Direktur_Utama",199051726);
+        //Composite
+        KaryawanComposite Direktur_Utama = new KaryawanComposite("Irwan Rifani","Direktur_Utama",199051726);
         
         KaryawanComposite KTu = new KaryawanComposite("Rizky Widhayat", "KTu",1994051727);
         
@@ -46,11 +45,7 @@ public class Project {
         Direktur_Utama.add(headMarketing);
         
         headMarketing.add(marketing);
-        
-        
         KTu.add(tatausaha);
-    
-        
         System.out.println(Direktur_Utama);
         
         for(KaryawanComposite headKaryawan : Direktur_Utama.getSubordinates()){
@@ -62,7 +57,7 @@ public class Project {
             }
         }
         
-        
+       //Template Method 
         Object object = new Object();
         object.start();
         
