@@ -15,7 +15,6 @@ public class Project {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
         //Prototype
         Karyawan Marketing = new Karyawan();
         KepKaryawan HeadMarketing = new KepKaryawan();
@@ -30,16 +29,10 @@ public class Project {
         
         //Composite
         KaryawanComposite Direktur_Utama = new KaryawanComposite("Irwan Rifani","Direktur_Utama",199051726);
-        
         KaryawanComposite KTu = new KaryawanComposite("Rizky Widhayat", "KTu",1994051727);
-        
         KaryawanComposite headMarketing = new KaryawanComposite("Dadang Hawari","Head Marketing",1993051728);
-        
         KaryawanComposite marketing = new KaryawanComposite("Faisal","Marketing",1995051729);
-       
-        
         KaryawanComposite tatausaha = new KaryawanComposite("Astri Diani","TU",1992051731);
-       
         
         Direktur_Utama.add(KTu);
         Direktur_Utama.add(headMarketing);
