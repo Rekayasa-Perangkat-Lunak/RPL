@@ -61,6 +61,22 @@ public class Project {
                 System.out.println(" - "+Karyawan);
             }
         }
+        
+        
+        Object object = new Object();
+        object.start();
+        
+        Object2 object = new Object2();
+        object.start();
+        
+        Object3 object = new object();
+        object.start();
+        
+        Object4 object = new Object4();
+        object.start();
+        
+        Obejct5 object = new Object5();
+        object.start();
     }
 
     
