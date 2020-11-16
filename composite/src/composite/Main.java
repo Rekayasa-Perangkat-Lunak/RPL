@@ -9,7 +9,7 @@ package composite;
  *
  * @author ASUS
  */
-public class Test {
+public class Main {
     public static void main(String[] args){
         
         Karyawan Direktur_Utama = new Karyawan("Irwan Rifani","Direktur_Utama",199051726);
