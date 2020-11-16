@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package prototype;
+package project;
 
 /**
  *
  * @author ACER
  */
-public class Karyawan extends Jabatan{
-    public Karyawan(){
-     Type = "Karyawan";
-   }
+public class KepKaryawan extends Jabatan{
+    public KepKaryawan(){
+    Type = "Kepala Karyawan";
+}
 }

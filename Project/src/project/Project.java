@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package prototype;
+package project;
 
 /**
  *
  * @author ACER
  */
-public class Prototype {
+public class Project {
 
     /**
      * @param args the command line arguments
@@ -27,5 +27,4 @@ public class Prototype {
         Jabatan KTU = HeadMarketing.clone();
         System.out.println("KTU :" +KTU.getType());
                 }
-
     }
