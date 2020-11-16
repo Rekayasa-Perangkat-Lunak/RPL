@@ -1,23 +1,26 @@
 package template.method;
 
-public class Karyawan {
+
+public class Karyawan extends TemplateKaryawan{
 
     
-    public static void main(String[] args) {
-        Object object = new Object();
-        object.start();
+    @Override
+    public String getName() {
+        return "Irwan Rifani";
         
-        Object2 object2 = new Object2();
-        object2.start();
-        
-        Object3 object3 = new Object3();
-        object3.start();
-        
-        Object4 object4 = new Object4();
-        object4.start();
-        
-        Object5 object5 = new Object5();
-        object5.start();
     }
+
+    @Override
+    public String getJabatan() {
+        return "Direktur Utama";
+        }
+
+    @Override
+    public Integer getNIP() {
+        return 199051726;
+        }
+
+      }
+   
     
-}
+
