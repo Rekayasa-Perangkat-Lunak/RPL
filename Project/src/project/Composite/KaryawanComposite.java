@@ -3,33 +3,37 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package composite;
+package Composite;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
-public class Karyawan {
-    
+/**
+ *
+ * @author ASUS
+ */
+public class KaryawanComposite {
     private String nama;
     private String Jabatan;
     private int Nip;
-    private List< Karyawan > subordinates;
+    private List< KaryawanComposite > subordinates;
     
-    public Karyawan(String nama, String Jabatan, int Nip){
+    public KaryawanComposite(String nama, String Jabatan, int Nip){
         this.nama = nama;
         this.Jabatan = Jabatan;
         this.Nip = Nip;
-        subordinates = new ArrayList< Karyawan >();
+        subordinates = new ArrayList< KaryawanComposite >();
     }
     
-    public void add(Karyawan add){
+    public void add(KaryawanComposite add){
         subordinates.add(add);
     }
     
-    public void remove(Karyawan remove){
+    public void remove(KaryawanComposite remove){
         subordinates.remove(remove);
     }
     
-    public List< Karyawan > getSubordinates(){
+    public List< KaryawanComposite > getSubordinates(){
         return subordinates;
     }
     
